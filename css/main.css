@@ -9,10 +9,23 @@ h2 {
 }
 
 h3 {
-  color: #fff;
+  color: #131e2f;
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 2em;
+  font-size: 2.3em;
   margin: 0;
+}
+
+h4 {
+  color: #131e2f;
+  font-family: 'Caveat', cursive;
+  font-size: 2.5em;
+}
+
+p {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 a.page_btn {
@@ -26,6 +39,8 @@ a.page_btn {
   text-align: center;
   text-decoration: none;
   margin: 40px auto;
+
+  box-shadow: 1px 4px 16px 8px rgba(75, 115, 152, 0.17);
 }
 
 /* END MAIN STYLES */
@@ -34,7 +49,7 @@ a.page_btn {
 /* PRODUCT SECTION */
 
 #product_section {
-  
+
 }
 
 #product_section header {
@@ -46,7 +61,7 @@ a.page_btn {
 
 .product_wrapper {
   position: relative;
-  height: 800px;
+  height: 850px;
 }
 
 .top_line {
@@ -64,7 +79,7 @@ a.page_btn {
   height: 10px;
   margin-top: 80px;
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
   right: 0;
   width: 1440px;
   z-index: 3;
@@ -92,6 +107,68 @@ a.page_btn {
   margin-top: 30px;
 }
 
-
-
 /* END PRODUCT SECTION */
+
+
+/* CALCULATOR SECTION */
+
+#calculator_section {
+  background-color: #f0ebef;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  margin-bottom: 100px;
+}
+
+form {
+  text-align: center;
+}
+
+.form_element {
+  float: left;
+}
+
+.form_element span {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
+}
+
+#calculator_section select {
+  background-color: transparent;
+  border: 5px solid #f1d5a3;
+  color: #f1d5a3;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3em;
+  padding-left: 15px;
+  width: 130px;
+  height: 60px;
+  float: left;
+  margin-right: 20px;
+}
+
+#calculator_section input[type=number] {
+  background-color: transparent;
+  border: 5px solid #f1d5a3;
+  color: #f1d5a3;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3em;
+  padding-left: 15px;
+  width: 200px;
+  height: 60px;
+}
+
+.bottom_section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bottom_section .page_btn {
+  font-size: 1.5em;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 12px;
+}
+/* END CALCULATOR SECTION */
