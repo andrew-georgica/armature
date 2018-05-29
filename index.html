@@ -31,6 +31,12 @@
         margin-bottom: 70px;
       }
 
+      @media screen and (max-width: 998px) {
+        #map {
+          height: 400px;
+        }
+      }
+
     </style>
 
   </head>
@@ -62,7 +68,7 @@
               <li></li>
             </ul>
             <ul class="links">
-              <li><a href="#">PolyEx</a></li>
+              <li><a href="#">PolyArm</a></li>
               <li><a href="#">Продукція</a></li>
               <li><a href="#">Економія</a></li>
               <li><a href="#">Ціни</a></li>
@@ -71,22 +77,24 @@
           </div>
         </section>
 
-        <h1>
-          Композитная арматура.
-        </h1>
+        <article class="header_content">
+          <h1>
+            Композитная арматура.
+          </h1>
 
-        <h2>
-          НИЗКАЯ ЦЕНА.
-          ВЫСОКОЕ КАЧЕСТВО.
-        </h2>
+          <h2>
+            НИЗКАЯ ЦЕНА.
+            ВЫСОКОЕ КАЧЕСТВО.
+          </h2>
+
+          <span class="bottom_line"></span>
+
+          <a href="" class="page_btn">
+            посчитать экономию
+          </a>
+        </article>
 
         <img src="img/title_srction/bg/1.jpg" alt="" class="img-responsive">
-
-        <span class="bottom_line"></span>
-
-        <a href="" class="page_btn">
-          посчитать экономию
-        </a>
 
       </section>
 
@@ -253,38 +261,53 @@
               <form action="">
 
                 <article class="form_element">
+
+                  <span>
+                    Диаметр стальной арматуры
+                  </span>
+
+                  <select name="steel_diameter">
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                  </select>
+
+                </article>
+
+                <article class="form_element">
+
+                  <span>
+                    Соответствующий диаметр композитной арматуры
+                  </span>
+
                   <select name="diameter">
                     <option value="6">6</option>
                     <option value="8">8</option>
                     <option value="10">10</option>
                     <option value="12">12</option>
                   </select>
-                  <span>
-                    Диаметр,мм
-                  </span>
+
                 </article>
 
                 <article class="form_element">
-                  <input type="number" name="quantity" min="1">
+
                   <span>
                     Введите длину арматуры, м
                   </span>
+
+                  <input type="number" name="quantity" min="1">
                 </article>
 
-                <article class="form_element steel_element">
-                  <select name="diameter">
-
-                  </select>
-                  <span>
-                    Диаметр стальной арматуры
-                  </span>
-                </article>
+                <a href="" class="page_btn">
+                  Рассчитать
+                </a>
 
               </form>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
               <h3>
-                Вы сэкономите
+                Вы сэкономите :
               </h3>
               <h3>
                 1 024 грн
@@ -450,7 +473,7 @@
           Хочу!
         </a>
 
-        <img src="img/measurements_section/src/1.png" alt="" class="img-responsive">
+        <img src="img/measurements_section/src/3.png" alt="" class="img-responsive">
 
         <h2>
           Композитная арматура
@@ -459,10 +482,14 @@
       </section>
 
       <section id="footer_section">
+
+        <div class="third_section">
+        <div id="num"></div>
+
         <div class="line_block"></div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <h3>
                 Мы всегда на связи
               </h3>
@@ -491,7 +518,7 @@
               </article>
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
 
               <h3>
                 Мы вам перезвоним
@@ -514,7 +541,7 @@
               </form>
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <h3>
                 Адрес нашего офиса
               </h3>
@@ -585,7 +612,10 @@
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
               <h3>
-
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique nemo sint, delectus soluta doloribus tenetur fugit
+                qui! Nemo amet, tempora, id neque deserunt mollitia sint
+                recusandae, explicabo aperiam magnam quis.
               </h3>
 
               <form>
@@ -617,6 +647,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
+
+    <!---
+    <script>
+
+      var offset = 800;
+      $(window).scroll(function(){
+      var scrolltop = $(this).scrollTop();
+      console.log(scrolltop);
+      $('.third_section').each(function(){
+        if(scrolltop >= $(this).offset().top - offset) {
+           $('#num').animate({ num: 90 - 3/* - начало */ }, {
+              duration: 5000,
+              step: function (num){
+                  this.innerHTML = (num + 3).toFixed(2) + '%'
+              }
+          });
+        }
+      });
+      });
+
+    </script>
+    -->
 
     <script>
 

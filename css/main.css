@@ -188,37 +188,40 @@ a.page_btn:hover {
 
 /* end header section */
 
+.header_content {
+  position: absolute;
+  top: 100px;
+  max-width: 1080px;
+  z-index: 5;
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
 h1 {
   color: #131e2f;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 5em;
   margin: 0;
   line-height: 90px;
-  position: absolute;
-  top: 50%;
-  margin-top: -220px;
-  left: 50px;
-  z-index: 5;
-  width: 800px;
+
 }
 
 #title_section h2 {
   color: #131e2f;
   font-size: 5em;
-  position: absolute;
-  max-width: 1015px;
+  max-width: 1020px;
   line-height: 90px;
-  top: 50%;
-  left: 50px;
-  margin-top: -40px;
-  z-index: 2;
 }
 
 #title_section .page_btn {
-  position: absolute;
   width: 500px;
-  bottom: 160px;
-  left: 55px;
+  margin-left: 0;
+}
+
+#title_section .bottom_line {
+  position: static;
+  width: 770px;
+  margin-top: 0;
 }
 
 #title_section img {
@@ -227,13 +230,6 @@ h1 {
   top: 0px;
 }
 
-#title_section .bottom_line {
-  bottom: 0;
-  top: 50%;
-  margin-top: 160px;
-  left: 55px;
-  width: 770px;
-}
 
 /* END TITLE SECTION */
 
@@ -408,12 +404,16 @@ h1 {
   padding-bottom: 70px;
 }
 
+#calculator_section h3 {
+  font-size: 2em;
+}
+
 form {
   text-align: center;
 }
 
 .form_element {
-  float: left;
+  margin-bottom: 20px;
 }
 
 .steel_element {
@@ -423,10 +423,13 @@ form {
 .form_element span {
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   display: block;
+  width: 240px;
+  margin: 0 auto;
 }
+
 
 #calculator_section select {
   background-color: transparent;
@@ -435,10 +438,9 @@ form {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 3em;
   padding-left: 15px;
-  width: 130px;
+  margin-top: 20px;
+  width: 100%;
   height: 60px;
-  float: left;
-  margin-right: 20px;
 }
 
 #calculator_section input[type=number] {
@@ -448,7 +450,8 @@ form {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 3em;
   padding-left: 15px;
-  width: 200px;
+  margin-top: 20px;
+  width: 100%;
   height: 60px;
 }
 
@@ -457,7 +460,7 @@ form {
   margin-top: 30px;
 }
 
-.bottom_section .page_btn {
+#calculator_section .page_btn {
   font-size: 1.5em;
   width: 250px;
   margin: 0 auto;
@@ -683,7 +686,7 @@ td {
 #measurements_section img {
   position: absolute;
   right: 30px;
-  bottom: 0;
+  bottom: -125px;
   z-index: 8;
 }
 
@@ -716,6 +719,18 @@ td {
   padding-top: 40px;
 }
 
+/*
+.third_section {
+  background:#123456;
+  height:200px;
+  margin-top:30px;
+}
+
+#num{
+  color:#fff;
+}
+*/
+
 #footer_section h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
@@ -747,7 +762,7 @@ td {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 300px;
+  width: 100%;
 }
 
 .footer_form input[type=text] {
@@ -757,7 +772,7 @@ td {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 1.5em;
   padding-left: 15px;
-  max-width: 300px;
+  width: 100%;
   height: 60px;
   margin-bottom: 20px;
 }
@@ -772,6 +787,7 @@ td {
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 30px;
+  padding-left: 0;
 }
 
 .bottom_menu ul li {
