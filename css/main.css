@@ -64,6 +64,21 @@ a.page_btn:hover {
   transform: scale(1.05);
 }
 
+.btn {
+	background-color: transparent;
+
+}
+
+.open>.dropdown-menu {
+  padding-left: 13px;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 /* END MAIN STYLES */
 
 
@@ -110,6 +125,28 @@ a.page_btn:hover {
 
 .namber_block {
   padding-top: 10px;
+  /*float: left;*/
+}
+
+.languige_block {
+  float: right;
+  margin-top: -45px;
+  margin-right: 100px;
+}
+
+.languige_block img {
+  float: left;
+  margin-right: 10px;
+}
+
+.languige_block i {
+  margin-top: 10px;
+
+}
+
+.languige_block a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo_block h2 {
@@ -177,6 +214,25 @@ a.page_btn:hover {
   margin-left: 20px;
   transition: color 0.5s, margin-left 0.5s;
 }
+
+.menu_wrapper ul.links li:first-child a:hover {
+  color: #fff;
+}
+
+.menu_wrapper ul.links li.languige {
+  display: none;
+}
+
+.menu_wrapper ul.links li.languige a {
+  float: left;
+  margin-right: 15px;
+}
+
+.menu_wrapper ul.links li.languige a:hover {
+  margin-left: 0;
+  transition: none;
+}
+
 .menu_wrapper .active_links {
   width: 380px !important;
   margin-left: 35px !important;
@@ -477,7 +533,6 @@ form {
   background-image: url("../img/table_section/src/1.png");
   background-repeat: no-repeat;
   background-position: left bottom;
-  height: 700px;
   margin-bottom: 10px;
 }
 
@@ -503,6 +558,9 @@ form {
 
 #table_width .table td {
   border-top: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 td {

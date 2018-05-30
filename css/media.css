@@ -96,6 +96,10 @@
 
 @media screen and (max-width: 1400px) {
 
+	.menu_wrapper ul.links li:first-child a:hover {
+	  color: #131e2f;
+	}
+
 	/* HEADER SECTION */
 
 	#title_section #header_section h2 {
@@ -152,6 +156,10 @@
 
 @media screen and (max-width: 1350px) {
 
+	.languige_block {
+	  margin-right: 50px;
+	}
+
 	.left_col h2 {
 		color: #e4c3b4;
 		font-size: 3.5em;
@@ -180,14 +188,6 @@
 
 	/* END PRODUCT SECTION */
 
-	/* TABLE SECTION */
-
-	#table_section {
-		height: 750px;
-	}
-
-	/* END  TABLE SECTION */
-
 	.left_col h2 {
 		font-size: 3em;
 		width: 500px;
@@ -198,6 +198,10 @@
 }
 
 @media screen and (max-width: 1120px) {
+
+	.languige_block {
+	  margin-right: 0;
+	}
 
 	#calculator_section form .page_btn {
 		width: 100%;
@@ -224,6 +228,18 @@
 }
 
 @media screen and (max-width: 1080px) {
+
+	.languige_block {
+	  display: none;
+	}
+
+	.menu_wrapper ul.links li.languige {
+	  display: block;
+	}
+
+	.menu_wrapper ul.links li {
+		background-color: #fff;
+	}
 
 	/* MAIN STYLES */
 
@@ -259,10 +275,6 @@
 
 
 	/* TABLE SECTION */
-
-	#table_section {
-		height: 780px;
-	}
 
 	#table_section .page_btn {
 		font-size: 1.2em;
@@ -824,17 +836,31 @@
 
 @media screen and (max-width: 440px) {
 
+	.logo_block {
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+
+	.menu_wrapper ul {
+		right: 20px;
+	}
+
+	.header_content {
+		padding-left: 20px;
+		padding-top: 50px;
+	}
+
 	#title_section .bottom_line {
 		max-width: 300px;
+	}
+
+	.about_us_content {
+		padding-left: 20px;
 	}
 
 	.product_section_img {
 		background-image: url("../img/about_us_section/src/2.jpg");
 		background-repeat: repeat;
-	}
-
-	#table_section {
-		height: 850px;
 	}
 
 	.service_section_contetnt_block {
@@ -884,8 +910,114 @@
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
 
+	.header_content {
+		padding-left: 20px;
+		padding-top: 30px;
+	}
 
+	#title_section .bottom_line {
+		max-width: 270px;
+	}
+
+	#title_section .page_btn {
+		font-size: 1em;
+		width: 270px;
+	}
+
+	.top_line {
+		max-width: 250px;
+	}
+
+	.bottom_line {
+		max-width: 250px;
+		bottom: 50px;
+	}
+
+	.product_title .page_btn {
+		font-size: 1.2em;
+		width: 270px;
+	}
+
+	#calculator_section form .page_btn {
+		font-size: 1.2em;
+	}
+
+	#calculator_section .page_btn {
+		font-size: 1.2em;
+		width: 270px;
+	}
+
+	#table_section .page_btn {
+		font-size: 1.2em;
+		width: 270px;
+	}
+
+	h4 {
+		font-size: 1.8em;
+	}
+
+	.service_section_contetnt_block p {
+		font-size: 0.9em;
+		margin-top: 20px;
+	}
+
+	.service_section_contetnt_block .page_btn {
+		font-size: .9em;
+		width: 270px;
+		margin-left: -130px;
+		padding-top: 12px;
+	}
+
+	#blog_section .page_btn {
+		font-size: 1.2em;
+		width: 270px;
+		height: 46px;
+		padding-top: 12px;
+	}
+
+	.left_col h2 {
+		font-size: 1.4em;
+		width: 100%;
+	}
+
+	.right_col h2 {
+		font-size: 1.4em;
+	}
+
+	#measurements_section h4 {
+		font-size: 2.5em;
+	}
+
+	#measurements_section .page_btn {
+		font-size: 1.2em;
+		width: 270px;
+		margin-left: -135px;
+	}
+
+	#measurements_section h2 {
+		font-size: 3em;
+		width: 500px;
+		right: -80px;
+		top: 320px;
+	}
+
+	#measurements_section img {
+		right: -30px;
+		bottom: -160px;
+	}
+
+	#footer_section a.page_btn {
+		font-size: 1.2em;
+	}
+
+}
+
+@media screen and (max-height: 480px) {
+
+	#title_section img {
+		margin-top: 200px;
+	}
 
 }
