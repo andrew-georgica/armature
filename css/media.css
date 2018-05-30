@@ -488,6 +488,10 @@
 
 @media screen and (max-width: 767px) {
 
+	#title_section #header_section h2 {
+		display: none;
+	}
+
 	/* header section */
 
 	.header_content {
@@ -1018,6 +1022,19 @@
 
 	#title_section img {
 		margin-top: 200px;
+	}
+
+}
+
+@media screen and (max-height: 375px) {
+
+	.header_content {
+		padding-left: 50px;
+		padding-top: 30px;
+	}
+
+	#title_section img {
+		margin-top: 0px;
 	}
 
 }

@@ -84,11 +84,11 @@
               <li></li>
             </ul>
             <ul class="links">
-              <li><a href="#">PolyArm</a></li>
-              <li><a href="#">Продукція</a></li>
-              <li><a href="#">Економія</a></li>
-              <li><a href="#">Ціни</a></li>
-              <li><a href="#">Контакти</a></li>
+              <li><a id="link_2" href="#about_us_section">PolyArm</a></li>
+              <li><a id="link_3" href="#product_section">Продукція</a></li>
+              <li><a id="link_4" href="#calculator_section">Економія</a></li>
+              <li><a id="link_5" href="#table_section">Ціни</a></li>
+              <li><a id="link_6" href="#footer_section">Контакти</a></li>
               <li class="languige">
                 <a href="#">
                   <img src="img/logo/src/ukr.png" alt="" class="img-responsive">
@@ -116,12 +116,12 @@
 
           <span class="bottom_line"></span>
 
-          <a href="" class="page_btn">
+          <a href="#calculator_section" id="link_1" class="page_btn">
             посчитать экономию
           </a>
         </article>
 
-        <img src="img/title_srction/bg/1.jpg" alt="" class="img-responsive">
+        <img src="img/title_srction/src/1.jpg" alt="" class="img-responsive">
 
       </section>
 
@@ -209,7 +209,7 @@
               Одно из самых инновационных и доступных решений в строительстве
             </p>
 
-            <a href="" class="page_btn">
+            <a href="" data-toggle="modal" data-target="#modal1" class="page_btn">
               Заказать
             </a>
           </div>
@@ -347,7 +347,7 @@
           <h4>
             Кто ж не любит экономить с умом?
           </h4>
-          <a href="" class="page_btn">
+          <a href="" data-toggle="modal" data-target="#modal1" class="page_btn">
             Заказать
           </a>
         </article>
@@ -479,7 +479,7 @@
             </table>
           </div>
 
-          <a href="" class="page_btn">
+          <a href="" data-toggle="modal" data-target="#modal1" class="page_btn">
             Рассчитать проект
           </a>
         </div>
@@ -511,7 +511,7 @@
             Мы подберем идеальный диаметр под Ваш проект.
           </h5>
 
-          <a href="" class="page_btn">
+          <a href="" data-toggle="modal" data-target="#modal1" class="page_btn">
             Бесплатная консультация
           </a>
         </div>
@@ -550,7 +550,7 @@
           </p>
         </header>
 
-        <a href="" class="page_btn">
+        <a href="" data-toggle="modal" data-target="#modal1" class="page_btn">
           Хочу!
         </a>
 
@@ -609,11 +609,11 @@
 
                 <div class="footer_form">
 
-                  <input type="text" placeholder="Имя" name="firstname"><br>
+                  <input type="text" placeholder="Имя" name="firstname" pattern=".{5,}" title="Введите минимум 5 символов"><br>
 
-                  <input type="text" placeholder="Телефон" name="firstname"><br>
+                  <input type="text" placeholder="Телефон" name="firstname" pattern="\d*" title="Номер телефону повинен складатись лише з цифр"><br>
 
-                  <input type="text" placeholder="Email" name="firstname"><br>
+                  <input type="text" placeholder="Email" name="firstname" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
 
                   <a href="" class="page_btn"> Отправить </a>
 
@@ -659,11 +659,11 @@
           <div class="line_block"></div>
 
           <ul>
-            <li><a href="#">ФайнБуд</a> /</li>
-            <li><a href="#">Продукція</a> /</li>
-            <li><a href="#">Економія</a> /</li>
-            <li><a href="#">Ціни</a> /</li>
-            <li><a href="#">Контакти</a></li>
+            <li><a id="link_7" href="#about_us_section">PolyArm</a> /</li>
+            <li><a id="link_8" href="#product_section">Продукція</a> /</li>
+            <li><a id="link_9" href="#calculator_section">Економія</a> /</li>
+            <li><a id="link_10" href="#table_section">Ціни</a> /</li>
+            <li><a id="link_11" href="#footer_section">Контакти</a> /</li>
           </ul>
         </div>
 
@@ -693,28 +693,18 @@
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique nemo sint, delectus soluta doloribus tenetur fugit
-                qui! Nemo amet, tempora, id neque deserunt mollitia sint
-                recusandae, explicabo aperiam magnam quis.
+                Наш специалист свяжется с Вами в течение 10 минут
               </h3>
 
-              <form>
-                <h4>
-
-                </h4>
+              <form action="">
 
                 <input type="text" placeholder="ФИО*" name="name" pattern=".{5,}" title="Введите минимум 5 символов"  required>
-                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Phone number should contain only digits." required >
                 <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter correct email" required >
-                <input type="text" placeholder="Город" name="city" pattern=".{2,}" title="Введите минимум 2 символов"  required>
 
-                <h4>
+                <textarea cols="50" id="title" name="title" placeholder="Комментарий"></textarea>
 
-                </h4>
+                <input type="submit" class="" value="Отправить">
 
-                <textarea cols="50" id="title" name="title" placeholder="Комментарий" rows="4"></textarea>
-                <input type="submit" value="Отправить">
               </form>
 
             </div>
@@ -728,6 +718,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
 
     <!---
     <script>

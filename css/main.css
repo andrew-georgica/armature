@@ -94,7 +94,7 @@ a.page_btn:hover {
 
 #header_section {
   background-color: #131e2f;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 20;
   height: 90px;
@@ -310,7 +310,7 @@ h1 {
 }
 
 .about_us_content {
-  background-image: url(../img/about_us_section/src/2.jpg);
+  background-image: url("../img/about_us_section/src/2.jpg");
   background-position: center center;
   height: 870px;
   max-width: 1200px;
@@ -662,7 +662,7 @@ td {
 }
 
 .right_col {
-  background-image: url(../img/blog_section/src/1.jpg);
+  background-image: url("../img/blog_section/src/1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   float: right;
@@ -895,3 +895,93 @@ td {
 }
 
 /* END FOOTER SECTION */
+
+
+/* MODAL WINDOW */
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.modal-open section#page-wrapper, .modal-open nav, .modal-open section#footer_section {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#modals-section .close {
+  font-size: 3em;
+  color: #131e2f;
+  opacity: 1;
+}
+
+.modal-content {
+  border-radius: 2px;
+}
+
+#modals-section textarea {
+  background-color: transparent;
+  border: 5px solid #f1d5a3;
+  color: #f1d5a3;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.5em;
+  padding-left: 15px;
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+}
+
+#modals-section .modal-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#modals-section h3 {
+  margin-top: 30px;
+}
+
+#modals-section form {
+  margin-top: 30px;
+}
+
+#modals-section input[type=number], #modals-section input[type=text] {
+  background-color: transparent;
+  border: 5px solid #f1d5a3;
+  color: #f1d5a3;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 2em;
+  padding-left: 15px;
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+}
+
+#modals-section input[type=submit] {
+  background-color: #131e2f;
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1em;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px auto;
+  box-shadow: 1px 4px 16px 8px rgba(75, 115, 152, 0.17);
+  width: 200px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#modals-section input[type=submit]:hover {
+  transform: scale(1.05);
+}
+
+/* END MODAL WINDOW */
