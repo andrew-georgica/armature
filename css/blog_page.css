@@ -1,0 +1,64 @@
+
+/* BLOG PAGE */
+
+#header_number h2 {
+  color: #fff;
+}
+
+.blog_page_header {
+  padding-top: 130px;
+}
+
+.blog_page_header img {
+  margin: 0 auto;
+}
+
+.blog_page_header h2 {
+  text-align: center;
+  max-width: 1000px;
+  margin: 80px auto;
+}
+
+#articles.blog_page_header span {
+  display: block;
+  margin-top: 40px;
+  text-align: right;
+}
+
+#articles {
+  margin-bottom: 100px;
+}
+
+#articles img {
+  margin: 0 auto;
+}
+
+#articles p {
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+#articles span {
+  color: #131e2f;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.2em;
+}
+
+a.article_description {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+footer {
+  position: relative;
+}
+
+.rigth_btn {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+/* END BLOG PAGE */
